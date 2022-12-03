@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Navbar</title>
+</head>
+<body>
+    <header class="navigation">
+        <nav class="navigation__container">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="navigation__container__logo">
+                <img src="../../assets/img/logo.png" alt="white logo koala technologies" class="navigation__logo">
+            </div>
+            <ul class="menu__container">
+                <li class="menu__container__item">
+                    <a href="../../index.html" class="menu__container__link">Home</a>
+                </li>
+                <li class="menu__container__item">
+                    <a href="../clientes/clientes.html" class="menu__container__link">Clientes</a>
+                </li>
+                <li class="menu__container__item">
+                    <a href="../produtos/produtos.html" class="menu__container__link">Produtos</a>
+                </li>
+                <li class="menu__container__item">
+                    <a href="" class="menu__container__link active">Vendas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container planilha">
+                <table class="planilha__table">
+                    <thead class="planilha__header">
+                        <tr class="planilha__header__container">
+                            <td class="planilha__header__item">
+                                CLIENTE
+                            </td>
+                            <td class="planilha__header__item">
+                                PRODUTO
+                            </td>
+                            <td class="planilha__header__item">
+                                QTD.
+                            </td>
+                            <td class="planilha__header__item">
+                                PREÇO
+                            </td>
+                            <td class="planilha__header__item">
+                                TOTAL
+                            </td>
+                            <td class="planilha__header__item">
+                                DATA
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="planilha__body"></tbody>
+                </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main container">
+                <div class="footer__title__container">
+                    <h2 class="footer__title">koalatech.io</h2>
+                </div>
+                <div class="footer__main__group">
+                    <p class="footer__item__header">SEDE DA EMPRESA</p>
+                    <p class="footer_item">
+                        Av. Presidente Costa e Silva <br>
+                        5333 - Passaré <br>
+                        FORTALEZA, CE. <br>
+                        CEP: 60862-515
+                    </p>
+                </div>
+                <div class="footer__main__group">
+                    <p class="footer__item__header">HORÁRIO DE ATENDIMENTO</p>
+                    <p class="footer_item">
+                        08:00 ÀS 12:00 HORAS <br>
+                        14:00 ÀS 18:00 HORAS
+                    </p>
+                </div>
+                <div class="footer__main__group">
+                    <p class="footer__item__header">CONTATO</p>
+                    <p class="footer_item">
+                        (85) 3459-6300
+                    </p>
+                </div>
+                <div class="footer__container__copyright">
+                    <p class="footer__copyright">2020 - 2022 — Koala Technologies</p>
+                    <p class="footer__copyright">TODOS OS DIREITOS RESERVADOS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

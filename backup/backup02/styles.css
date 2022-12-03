@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap');
+
+:root {
+    --primaryColor: #161925;
+    --secondaryColor: #FDFFFC;
+    --terciaryColor:#F1D302;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navigation {
+    background-color: var(--primaryColor);
+}
+
+.container {
+    max-width: 1144px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navigation__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.2rem;     
+}
+
+.navigation__container-logo{
+    max-width: 7rem;
+    min-width: 3rem;
+}
+
+.navigation__logo {
+    padding-top: 8px;
+    width: 7rem;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu__link {
+    display: block;
+    font-size: 1rem;
+    color:var(--secondaryColor);
+    padding: 6px 18px;
+    border-radius: 28px;
+    transition: .2s;
+    margin: 0 2px;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    color:var(--primaryColor);
+    background: var(--secondaryColor);
+}
+
+.hamburguer {
+    display: none;
+}
+
+.footer {
+    background-color: var(--primaryColor);
+    min-height: 20rem;
+    height: 70vh;
+    color: var(--secondaryColor);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;    
+}    
+
+.footer__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.footer__main__group{
+    font-size: 0.6rem;
+    letter-spacing: 0.8px;
+}
+
+.footer__item__header {
+    font-weight: 700;
+}
+
+
+
+.footer__copyright {
+    font-size: 0.8rem;
+}
+
+ @media only screen and (max-width: 768px) {
+    .hamburguer {
+        display: block;
+        cursor: display;
+    }    
+
+    .hamburguer .line {
+        width: 30px;
+        height: 3px;
+        background: var(--secondaryColor);
+        margin: 6px 0;
+    }
+    
+
+    .navigation{
+        height: 320px;
+        background: var(--primaryColor);                    
+    }
+
+    .menu_container {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        list-style-type: none;
+        width: fit-content;
+        margin: 320px auto 0 auto;
+        padding: 0;
+        transition: .5s;
+    }
+
+    .menu__link {
+        margin-bottom: 12px;
+    }
+ }
