@@ -1,4 +1,5 @@
 # PGE Coding Test
+![foto-do-projeto](./assets/img/print-do-projeto.png)
 ---
 ## What is it?
 It's a simple static website, built for showing 3 different charts, each one in a different page.
